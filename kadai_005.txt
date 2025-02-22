@@ -1,0 +1,32 @@
+PS C:\Users\ryomy\OneDrive\デスクトップ> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\ryomy\OneDrive\デスクトップ
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/02/22     12:53                git_challenge
+
+
+PS C:\Users\ryomy\OneDrive\デスクトップ> cd git_challenge
+PS C:\Users\ryomy\OneDrive\デスクトップ\git_challenge> git init
+Initialized empty Git repository in C:/Users/ryomy/OneDrive/デスクトップ/git_challenge/.git/
+PS C:\Users\ryomy\OneDrive\デスクトップ\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\ryomy\OneDrive\デスクトップ\git_challenge> git add hello_world.txt
+PS C:\Users\ryomy\OneDrive\デスクトップ\git_challenge> git commit -m "フ ァイルを追加"
+[main (root-commit) f40ba7b] ファイルを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\ryomy\OneDrive\デスクトップ\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\ryomy\OneDrive\デスクトップ\git_challenge> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\ryomy\OneDrive\デスクトップ\git_challenge> git add hello_world.txt
+PS C:\Users\ryomy\OneDrive\デスクトップ\git_challenge> git commit -m "日 本語訳を追記"
+[main fe295d6] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\ryomy\OneDrive\デスクトップ\git_challenge> git log --oneline
+fe295d6 (HEAD -> main) 日本語訳を追記
+f40ba7b ファイルを追加
